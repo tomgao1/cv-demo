@@ -1,0 +1,31 @@
+Arguments: 
+  D:\Software\node.js\node.exe D:\Software\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Users\Administrator\Desktop\cmder\vendor\git-for-windows\mingw64\bin;C:\Users\Administrator\Desktop\cmder\vendor\git-for-windows\usr\bin;C:\Users\Administrator\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;D:\Software\yarn\bin;D:\Software\node.js;D:\Software\hugo;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Local\Yarn\bin;D:\Microsoft VS Code\bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  10.20.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\Administrator\Desktop\cv\package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at D:\Software\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (D:\Software\yarn\lib\cli.js:310:30)
+      at D:\Software\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  

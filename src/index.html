@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>我的简历</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #eee;
+      margin: 20px 0;
+    }
+
+    article {
+      width: 21cm;
+      min-height: 29.7cm;
+      background: white;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 1em;
+    }
+  </style>
+  <style media="print">
+    body {
+      margin: 0;
+    }
+
+    .page2 {
+      page-break-before: always;
+      margin-top: 30px;
+    }
+  </style>
+  <style>
+    body {}
+
+    p {
+      margin: .3em 0;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    strong {
+      font-weight: normal;
+      color: red;
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+
+    p,
+    li {
+      color: #666;
+    }
+
+    strong {
+      font-weight: normal;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    .bio {
+      position: relative;
+    }
+
+    .bio img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  </style>
+
+  <style>
+    .projects {}
+
+    .projects p {
+      color: #666;
+    }
+
+    .projects strong {
+      color: red;
+    }
+
+    .projects>ol {
+      margin-top: 0;
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    .projects>ol>li {
+      margin-bottom: 24px;
+    }
+
+    .projects>ol>li>header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .projects>ol>li h3 {
+      display: inline-block;
+    }
+  </style>
+  <style>
+    .skills {}
+
+    #skills {
+
+      width: 500px;
+      height: 270px;
+    }
+    @media print {
+      #skills{display:none;}
+    }
+
+
+    .skills>.wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skills>.wrapper>:first-child {
+      margin-right: 24px;
+    }
+
+    .skills>.wrapper>#skills {}
+
+    .skills>.wrapper>ul {
+      color: #666;
+    }
+
+    .skills>.wrapper strong {
+      color: red;
+    }
+
+    .skills>.wrapper>ul>li {
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+  </style>
+  <style>
+    .openSource {}
+
+    .openSource>h2 {}
+
+    .openSource header img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .openSource>ul {}
+
+    .openSource>ul>li {
+      margin-bottom: 24px;
+    }
+
+    .openSource header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .openSource h3 {}
+  </style>
+  <style>
+    .jobs {}
+
+    .jobs>h2 {}
+
+    .jobs>ol {}
+
+    .jobs>ol>li {
+      margin: 12px 0;
+    }
+
+    .jobs header {
+      display: flex;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .jobs header>h3 {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .jobs header>h4 {
+      margin-left: 1em;
+      font-size: 18px;
+    }
+
+    .jobs header>span {
+      font-size: 18px;
+      margin-left: auto;
+    }
+  </style>
+<style media="print">
+  #图的id或其他选择器 {
+      display: none;
+  }
+  </style>
+  <style>
+    @media (max-width: 500px) {
+      body {
+        margin: 0;
+      }
+
+      article {
+        width: auto;
+        height: auto;
+      }
+
+      .bio img {
+        display: none;
+      }
+
+      .skills .wrapper {
+        flex-direction: column;
+      }
+
+      #skills {
+        width: auto;
+      }
+      .jobs header{
+        flex-direction: column;
+      }
+      .jobs header >h3,
+      .jobs header >h4,
+      .jobs header >span {
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <section class="bio">
+      <img src="./images/a.jpg" alt="" width="100" height="100">
+      <h1>高明豪</h1> 
+      
+      <p>
+        男 | 27岁 | 前端开发工程师 | 成都
+      </p>
+      <p>
+        手机： <a href="tel:15882217371">15882217371</a>| 微信：gao19930831 | 邮箱：<a href="mailto:406038564@qq.com">406038564@qq.com</a>。
+      </p>
+    </section>
+
+
+
+
+
+    <section class="projects">
+      <h2>项目经历</h2>
+      <ol>
+        <li>
+          <header>
+            <h3>轮子UI</h3>
+            <span>
+              <a href="https://github.com/tomgao1/xiaolunzi-demo">源码链接</a>
+              <a href="http://gao87249903.gitee.io/lunzi-vue/components/collapse.html">项目预览</a>
+            </span>
+          </header>
+          <p>
+            一款基于 <strong>Vue</strong> / <strong>原生JS</strong>/<strong>parcel</strong> 的 UI 框架。
+
+          </p>
+          <p>
+            主要组件有文本输入框、<strong>弹出框</strong>、<strong>网格系统</strong>、默认布局、toast组件、Tabs组件等等
+
+          </p>
+    
+          <p>
+            制作过程让我对 原生JS 和<strong>单元测试</strong>有了新的认识。更好的运用单元测试来验证代码的准确性，提高后期工作效率
+            
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>小白记账</h3>
+            <span>
+              <a href="https://github.com/tomgao1/xiaolunzi-demo">源码私有</a>
+              <a href="https://tomgao1.github.io/xiaobai-demo-website/#/money">项目预览</a>
+            </span>
+          </header>
+          <p>
+            这是一个基于 <strong>Vue</strong> 、<strong>VueRouter</strong> 、 <strong>TypeScript</strong>的单页面应用。
+          </p>
+          <p>
+            该应用特点是快速记账，主要功能实现极简的手机端<strong>记账功能</strong>以及图表文字分析。
+          </p>
+          <p>
+          在设计实现的过程中,期间遇到很多关于<strong>webpack</strong>和<strong>TypeScript</strong>方面问题，解决过程在博客有所记录，
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>大白记账</h3>
+            <span>
+              <a href="https://gitee.com/gao87249903/xiaobei-react-website">源码地址</a>
+              <a href="https://gao87249903.gitee.io/xiaobei-react-website/#/money">项目预览</a>
+            </span>
+          </header>
+          <p>
+            一个基于 <strong>React</strong> / <strong>TypeScript</strong> 的移动端单页面应用。
+          </p>
+
+          <p>
+            这是我从自己的需求出发，设计出的<strong>极简记账应用</strong>，特点是<strong>快速记账</strong>，
+            而且可以通过图表查看自己的消费习惯。
+          </p>
+          <p>
+            该项目使用 <strong>React Hooks</strong>，让我对 Hooks 有了一定的理解和应用。
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="skills">
+      <h2>技能</h2>
+      <div class="wrapper">
+        <div id="skills"></div>
+        <ul>
+          <li>熟悉页面制作技巧，能将设计稿<strong>还原</strong> </li>
+          <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
+          <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
+          <li>熟悉掌握 React全家桶的使用，包括 create-react-app、ReactRouter、Redux 等</li>
+          <li>熟悉 ES6，包括 let / Promise / await / 析构赋值</li>
+          <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
+          <li>了解 <strong>Webpack 的配置和优化</strong></li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section class="openSource">
+      <h2>开源项目</h2>
+      <ul>
+        <li>
+          <header>
+            <h3>自己写的 DOM 库</h3>
+            <a href="https://github.com/tomgao1/DOM-1">源码链接</a>
+          </header>
+          <p>实现了元素选择、元素创建、<strong>事件委托</strong>、滑动手势等常见功能</p>
+        </li>
+        <li class="page2">
+          <header>
+            <h3>会动的皮卡丘</h3>
+            <span>
+              <a href="https://github.com/tomgao1/pikaqiu-demo">源码链接</a>
+              <a href="https://tomgao1.github.io/pikaqiu-demo/dist/test.html">项目预览</a>
+            </span>
+          </header>
+          <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>
+        </li>
+        <li>
+          <header>
+            <h3>简易画板</h3>
+            <span>
+              <a href="https://github.com/tomgao1/CANVAS-DEMO-1">源码链接</a>
+              <a href="https://tomgao1.github.io/CANVAS-DEMO-1/">项目预览</a>
+            </span>
+          </header>
+          <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
+        </li>
+      </ul>
+    </section>
+
+
+
+    <section class="jobs">
+      <h2>工作经历</h2>
+      <ol>
+        <li>
+          <header>
+            <h3> 彩云工作室 </h3>
+            <h4>全栈开发工程师（Ruby+JS）</h4>
+            <span><time>2017年1月</time>~<time>2018年1月</time></span>
+          </header>
+          <ul>
+            <li>
+              独立负责 iPad 客户端的后台 <strong>Rails</strong> 开发和前端开发工作
+            </li>
+            <li>
+              负责团队基础库开发、单元测试、文档撰写，确保测试<strong>覆盖率达到 90%</strong> 以上
+            </li>
+            <li>
+              作为前端骨干，负责给前端较弱的同事进行培训，提高其前端开发工作效率
+            </li>
+          </ul>
+        </li>
+        <li>
+          <header>
+            <h3>哦外巴巴集团杭州总部</h3>
+            <h4>开发工程师</h4>
+            <span><time>2015年1月</time>~<time>2017年1月</time></span>
+          </header>
+          <ul>
+            <li>独立负责某 CRM 系统的开发与维护（后端使用Groovy，前端使用JS）</li>
+            <li>负责全部门 <strong>UI 框架的开发</strong>，包括对话框、<strong>树形组件</strong>、<strong>日期选择器</strong>等常用组件</li>
+            <li>定期组织内部分享，包括 Git 的使用、<strong>ES6 新特性</strong>、TypeScript 等话题</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section class="others">
+      <h2>其他链接</h2>
+      <ul>
+        <li><a href="https://www.yuque.com/dashboard">我的博客</a>，目前已有 20 篇技术文章</li>
+        <li><a href="https://github.com/tomgao1">我的 GitHub</a>，过去三个月有 200 次提交</li>
+      </ul>
+    </section>
+
+    <section class="education">
+      <h2>教育经历</h2>
+      <p>
+        <span><time>2013年</time>~<time>2016年</time></span>
+        四川工程职业技术学院 大专</p>
+    </section>
+
+  </article>
+  <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
